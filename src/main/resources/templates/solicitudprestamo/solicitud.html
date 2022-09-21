@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{master}">
+<head>
+</head>
+
+<body>
+
+<div layout:fragment="content">
+    <div class="container-fluid">
+        <h1 class="h3 mb-4 text-gray-800" th:text="${titulopagina}"></h1>
+
+        <div class="row">
+
+            <div class="col-sm-3">
+                <label>Seleciones el tipo de prestamo</label>
+                <select class="form-control">
+                    <option> Selecciones...</option>
+                </select>
+            </div>
+
+            <div class="col-sm-3">
+                <label>Por favor coloque el monto</label>
+                <input type="text" class="form-control"/>
+            </div>
+
+            <div class="col-sm-3">
+                <label>Por favor coloque el numero de cuotas</label>
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+
+        <hr>
+        <h3 class="h3 mb-4 text-gray-800">Informacion del Codeudor</h3>
+        <div class="row">
+
+            <div class="col-sm-4">
+                <label>Nombre del Codeudor</label>
+                <input type="text" class="form-control"/>
+            </div>
+
+            <div class="col-sm-4">
+                <label>Numero del Celular</label>
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row" style="text-align:center">
+            <button class="btn btn=primary">Radicar Solicitud</button>
+            <div/>
+
+    </div>
+
+</body>
+</html>
